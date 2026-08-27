@@ -40,9 +40,9 @@ defaults:
 # site domain, full URL to the production location of your collection
 url: 
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: https://nclarke2242458-github.io/
+baseurl: https://nclarke2242458.github.io/
 # location of code, the full url to your github repository
-source-code: https://github.com/nclarke2242458/nclarke2242458-github.io
+source-code: https://github.com/nclarke2242458/nclarke2242458.github.io
 
 ##########
 # SITE SETTINGS
