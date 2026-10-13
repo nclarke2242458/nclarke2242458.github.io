@@ -19,9 +19,9 @@
 # - Collection objectid: demo_001
 #
 image-style: full-image                # full-image, half-image, or no-image
-featured-image: /assets/img/IrishLadyImage.jpg
-featured-image-credit: "Gustave Courbet, Jo, La Belle Irlandaise, 1865-66. The Metropolitan Museum of Art. [https://www.metmuseum.org/art/collection/search/436001](https://www.metmuseum.org/art/collection/search/436001)"
-featured-image-alt-text: "Painting of a woman with long red hair holding a hand mirror"
+featured-image: /assets/img/BattleStandard.avif
+featured-image-credit: "William Young Ottley after a drawing attributed to Raphael, 'Battle for the Standard,' 1823. Etching and aquatint in colour, from Ottley's The Italian School of Design (London, 1823). Royal Academy of Arts, London, object number 17/4051."
+featured-image-alt-text: "Print of a crowded battle scene with soldiers and horses fighting over a standard"
 
 
 # NAVIGATION FEATURES
