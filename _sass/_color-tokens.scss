@@ -321,48 +321,39 @@ $cb-navbar-override: null      !default;
     --cb-btn-close-filter: invert(1) grayscale(100%) brightness(200%);
 
   // ────────────────────────────────────────────────────────────────────────
-  //  CUSTOM — user-supplied hex color; hue extracted, standard chromas
+  //  PLUM — custom palette: #E0D8DC #472849 #9C8F72 #4E3D30 #5D5E71
   // ────────────────────────────────────────────────────────────────────────
-  } @else if $cb-theme == 'custom' and $cb-custom-color != null {
-    $hue: color.hue($cb-custom-color);
+  } @else if $cb-theme == 'plum' {
+    --cb-surface-100: oklch(96.5% 0.008 345);   /* page background, lighter tint of E0D8DC */
+    --cb-surface-200: oklch(94.5% 0.009 345);
+    --cb-surface-300: oklch(92.0% 0.010 345);
+    --cb-border-100:  #E0D8DC;
+    --cb-border-200:  oklch(84.0% 0.012 345);
+    --cb-muted:       #9C8F72;
+    --cb-text-500:    oklch(60%   0.005 88);
+    --cb-text-600:    oklch(50%   0.005 88);
+    --cb-text-700:    oklch(45%   0.006 88);
+    --cb-text-800:    oklch(35%   0.006 88);
+    --cb-text-900:    oklch(22%   0.020 325);
+    --cb-text-950:    oklch(14%   0.020 325);
 
-    --cb-surface-100: oklch(97.5% 0.018 #{$hue});
-    --cb-surface-200: oklch(95.5% 0.020 #{$hue});
-    --cb-surface-300: oklch(93.5% 0.022 #{$hue});
-    --cb-border-100:  oklch(90.5% 0.020 #{$hue});
-    --cb-border-200:  oklch(85.5% 0.022 #{$hue});
-    --cb-muted:       oklch(72%   0.008 #{$hue});
-    --cb-text-500:    oklch(60%   0.003 #{$hue});
-    --cb-text-600:    oklch(50%   0.003 #{$hue});
-    --cb-text-700:    oklch(45%   0.004 #{$hue});
-    --cb-text-800:    oklch(35%   0.004 #{$hue});
-    --cb-text-900:    oklch(20%   0.005 #{$hue});
-    --cb-text-950:    oklch(13%   0.005 #{$hue});
+    --cb-hue:           325deg;
+    --cb-accent-hue:    283deg;
+    --cb-accent-chroma: 0.03;
 
-    --cb-hue:           #{$hue};
-    --cb-accent-hue:    #{$hue};
-    --cb-accent-chroma: 0.12;
+    /* Dark navbar — plum */
+    --cb-navbar-bg:       #472849;
+    --cb-navbar-text:     #E0D8DC;
+    --cb-navbar-border:   transparent;
+    --cb-navbar-hover-bg: rgba(224, 216, 220, 0.10);
 
-    --cb-primary-color: #{$cb-custom-color};
-    --cb-accent-color:  #{$cb-custom-color};
-    --cb-hr-color:      oklch(72% 0.08 #{$hue});
-    --cb-print-accent:  oklch(32% 0.09 #{$hue});
+    --cb-footer-bg:       #4E3D30;
 
-    @if $cb-navbar-override == 'light' {
-        --cb-navbar-bg:       oklch(97.5% 0.018 #{$hue});
-      --cb-navbar-text:     #191919;
-      --cb-navbar-border:   oklch(85.5% 0.022 #{$hue});
-      --cb-navbar-hover-bg: rgba(0, 0, 0, 0.08);
-      --cb-footer-bg:       oklch(20% 0.002 90);
-      --cb-btn-close-filter: none;
-    } @else {
-      --cb-navbar-bg:       oklch(25% 0.09 #{$hue});
-      --cb-navbar-text:     #ffffff;
-      --cb-navbar-border:   transparent;
-      --cb-navbar-hover-bg: rgba(255, 255, 255, 0.12);
-      --cb-footer-bg:       oklch(18% 0.08 #{$hue});
-      --cb-btn-close-filter: invert(1) grayscale(100%) brightness(200%);
-    }
+    --cb-primary-color:   #472849;   /* links */
+    --cb-accent-color:    #5D5E71;   /* aside flags, buttons */
+    --cb-hr-color:        #9C8F72;   /* horizontal rules */
+    --cb-print-accent:    #472849;
+    --cb-btn-close-filter: invert(1) grayscale(100%) brightness(200%);
 
   // ────────────────────────────────────────────────────────────────────────
   //  DEFAULT — warm cream neutral; original out-of-box behavior
