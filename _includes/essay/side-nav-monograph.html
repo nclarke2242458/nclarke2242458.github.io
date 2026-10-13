@@ -34,10 +34,10 @@
   {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
   {% for nav in navItems %}
     {% if nav.stub %}
-    <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
+    <a class="essay-nav-btn" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
     {% else %}
     <div class="dropdown">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ nav.display_name }}</a>
+      <a class="essay-nav-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ nav.display_name }}</a>
       <div class="dropdown-menu dropdown-menu-end">
         {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
         {% for c in navChildren %}
