@@ -1,7 +1,7 @@
 ---
 title: Critical Reading Summary
-order: 2
-part: Assignments
+order: 5
+part: Teaching
 ---
 
  
