@@ -30,7 +30,23 @@
         <div class="essay-navbar-center">
           <a class="navbar-brand essay-navbar__fluid-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         </div>
-        <div class="essay-navbar-right">
+        <div class="essay-navbar-right align-items-center gap-3">
+  {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
+  {% for nav in navItems %}
+    {% if nav.stub %}
+    <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
+    {% else %}
+    <div class="dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ nav.display_name }}</a>
+      <div class="dropdown-menu dropdown-menu-end">
+        {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
+        {% for c in navChildren %}
+        <a class="dropdown-item" href="{{ c.stub | relative_url }}">{{ c.display_name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
           <button class="essay-nav-btn essay-nav-btn--menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Open navigation menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
