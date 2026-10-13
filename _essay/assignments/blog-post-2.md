@@ -1,6 +1,6 @@
 ---
 title: Blog Post 2
-order: 4
-part: Assignments
+order: 2
+part: Blog
 ---
 
