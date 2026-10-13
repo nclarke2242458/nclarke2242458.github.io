@@ -48,7 +48,7 @@ keyboard-essay-nav: true
 #          gregynog, ashendene, custom
 # ────────────────────────────────────────────────────────────────────────
 
-color-theme: default
+color-theme: plum
 
 #### BUILT-IN THEMES (printing-history references)
 # idaho     — USDA, 1958 Douglas-fir cloth, gold stamp · dark green navbar · Spectral
