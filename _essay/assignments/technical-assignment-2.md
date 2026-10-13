@@ -1,6 +1,6 @@
 ---
 title: Technical Assignment 2
 order: 9
-part: Assignments
+part: Technical
 ---
 
