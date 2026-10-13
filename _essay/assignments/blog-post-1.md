@@ -1,6 +1,6 @@
 ---
 title: Blog Post 1
-order: 3
-part: Assignments
+order: 1
+part: Blog
 ---
-Hello World! This is a test of my ability to edit the GitHub website.
+
