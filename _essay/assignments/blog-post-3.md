@@ -1,7 +1,7 @@
 ---
 title: Blog Post 3
-order: 5
-part: Assignments
+order: 3
+part: Blog
 ---
 **Is Twine the new close reading?**
 
