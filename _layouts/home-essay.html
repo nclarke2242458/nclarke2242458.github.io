@@ -27,7 +27,25 @@ Essays have both title and order in front matter
         width: 100%;
         position: relative;
     }
-      #title-box {
+    .home-headshot {
+        display: block;
+        width: 140px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #9C8F72;
+        outline: 1px solid #E0D8DC;
+        outline-offset: 4px;
+        margin: 1.25rem 0 0 0.25rem;
+        filter: grayscale(1) sepia(0.4) contrast(1.1);
+        opacity: 0.85;
+        transition: filter 0.8s ease, opacity 0.8s ease;
+    }
+    .home-headshot:hover {
+        filter: none;
+        opacity: 1;
+    }
+  #title-box {
         position: absolute;
         top: 15%;
         left: 5%;
@@ -348,6 +366,7 @@ Same logic as before for full-image, half-image, or no-image
 <div id="home-banner" class="container-fluid p-0">
 
     <div id="title-box" class="py-3 px-4 text-white bg-dark bg-opacity-75 rounded">
+    <img class="home-headshot" src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Headshot">
         <h1 class="home-title home-title--hero mt-5">{{ site.title }}</h1>
         {% if page.author or site.author %}
         <p class="tagline mb-4">by {{ page.author | default: site.author }}</p>
