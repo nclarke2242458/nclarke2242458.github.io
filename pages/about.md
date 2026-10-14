@@ -2,7 +2,7 @@
 title: About Me
 layout: about
 permalink: /about.html
-credits: true
+credits: false
 text-search: true
 # Edit the markdown in this file to describe your project
 ---
