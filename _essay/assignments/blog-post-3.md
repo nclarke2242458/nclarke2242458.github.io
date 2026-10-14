@@ -1,9 +1,9 @@
 ---
-title: Blog Post 3
+title: Twine for Close Reading?
 order: 3
 part: Blog
 ---
-**Is Twine the new close reading?**
+**Twine for Close Reading?**
 
 As infant scholars, we MAs in the UVA English department have had many conversations about generative AI in the First-Year Writing classroom. We’ve covered its effects on student reading, attention spans, in-class versus out-of-class essays, and the importance of teaching critical analysis. Some of us have started to say we've exhausted the topic, at least on the student side.
 
